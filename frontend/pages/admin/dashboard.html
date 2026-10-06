@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - Smart Municipal Corporation</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body data-page="admin-dashboard" data-role="ADMIN">
+    <header id="site-header"></header>
+    <main class="container">
+      <h1>Admin Dashboard</h1>
+      <div id="page-message"></div>
+      <div class="tabs">
+        <button data-tab="overview">Overview</button>
+        <button data-tab="complaints">Complaints</button>
+
+        <button data-tab="officers">Officers</button>
+        <button data-tab="contractors">Contractors</button>
+        <button data-tab="locations">Locations</button>
+        <button data-tab="roads">Roads</button>
+        <button data-tab="pipelines">Pipelines</button>
+        <button data-tab="projects">Projects</button>
+        <button data-tab="payments">Payments</button>
+        <button data-tab="maintenance">Maintenance</button>
+        <button data-tab="alerts">Alerts</button>
+        <button data-tab="reports">Reports</button>
+      </div>
+      <div class="panel" id="panel-overview">
+        <div class="grid" id="overview-stats"></div>
+        <h2>Citizen feedback</h2>
+        <div id="feedback-list"></div>
+      </div>
+      <div class="panel" id="panel-complaints"><div id="complaint-list"></div></div>
+      <div class="panel" id="panel-officers"><div id="crud-officers"></div></div>
+      <div class="panel" id="panel-contractors"><div id="crud-contractors"></div></div>
+      <div class="panel" id="panel-locations"><div id="crud-locations"></div></div>
+      <div class="panel" id="panel-roads"><div id="crud-roads"></div></div>
+      <div class="panel" id="panel-pipelines"><div id="crud-pipelines"></div></div>
+      <div class="panel" id="panel-projects"><div id="crud-projects"></div></div>
+      <div class="panel" id="panel-payments"><div id="crud-payments"></div></div>
+      <div class="panel" id="panel-maintenance"><div id="crud-maintenance"></div></div>
+      <div class="panel" id="panel-alerts"><div id="crud-alerts"></div></div>
+      <div class="panel" id="panel-reports"><div id="report-area"></div></div>
+    </main>
+    <footer class="site-footer">Smart Municipal Corporation System | Project by Ayush and Aditya</footer>
+    <script src="/js/api.js"></script>
+    <script src="/js/ui.js"></script>
+    <script src="/js/admin.js"></script>
+  </body>
+</html>

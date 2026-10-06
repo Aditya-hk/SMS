@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit a Complaint - Smart Municipal Corporation</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body data-page="submit-complaint" data-role="CITIZEN">
+    <header id="site-header"></header>
+    <main class="container">
+      <h1>Submit a Complaint</h1>
+      <div id="page-message"></div>
+      <div class="card form-narrow">
+        <form id="complaint-form" novalidate>
+          <label for="title">Title *</label><input type="text" id="title" maxlength="150" />
+          <label for="category">Category *</label>
+          <select id="category">
+            <option value="">-- select --</option>
+            <option value="ROAD">Road</option>
+            <option value="WATER">Water</option>
+            <option value="SEWAGE">Sewage</option>
+            <option value="GARBAGE">Garbage</option>
+            <option value="STREETLIGHT">Streetlight</option>
+            <option value="OTHER">Other</option>
+          </select>
+          <label for="location_id">Location *</label
+          ><select id="location_id"></select>
+          <label for="complaint_date">Date *</label><input type="date" id="complaint_date" />
+          <label for="description">Description *</label><textarea id="description" maxlength="2000"></textarea>
+          <br /><button class="btn" type="submit">Submit complaint</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="site-footer">Smart Municipal Corporation System | Project by Ayush and Aditya</footer>
+    <script src="/js/api.js"></script>
+    <script src="/js/ui.js"></script>
+    <script src="/js/citizen.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Officer Dashboard - Smart Municipal Corporation</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body data-page="officer-dashboard" data-role="OFFICER">
+    <header id="site-header"></header>
+    <main class="container">
+      <h1>Officer Dashboard</h1>
+      <div id="page-message"></div>
+      <div class="tabs">
+        <button data-tab="complaints">Assigned Complaints</button><button data-tab="projects">My Projects</button>
+        <button data-tab="roads">Road Infrastructure</button><button data-tab="utilities">Utilities</button
+        ><button data-tab="alerts">Alerts</button>
+      </div>
+      <div class="panel" id="panel-complaints"><div id="complaint-list"></div></div>
+      <div class="panel" id="panel-projects"><div id="project-list"></div></div>
+      <div class="panel" id="panel-roads"><div id="road-list"></div></div>
+      <div class="panel" id="panel-utilities"><div id="pipeline-list"></div></div>
+      <div class="panel" id="panel-alerts"><div id="alert-list"></div></div>
+    </main>
+    <footer class="site-footer">Smart Municipal Corporation System | Project by Ayush and Aditya</footer>
+    <script src="/js/api.js"></script>
+    <script src="/js/ui.js"></script>
+    <script src="/js/officer.js"></script>
+  </body>
+</html>

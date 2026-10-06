@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contractor Dashboard - Smart Municipal Corporation</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body data-page="contractor-dashboard" data-role="CONTRACTOR">
+    <header id="site-header"></header>
+    <main class="container">
+      <h1>Contractor Dashboard</h1>
+      <div id="page-message"></div>
+      <div class="tabs">
+        <button data-tab="projects">Assigned Projects</button><button data-tab="maintenance">Maintenance</button
+        ><button data-tab="payments">Payments</button>
+      </div>
+      <div class="panel" id="panel-projects"><div id="project-list"></div></div>
+      <div class="panel" id="panel-maintenance"><div id="maintenance-list"></div></div>
+      <div class="panel" id="panel-payments">
+        <div class="grid" id="payment-total"></div>
+        <div id="payment-list"></div>
+      </div>
+    </main>
+    <footer class="site-footer">Smart Municipal Corporation System | Project by Ayush and Aditya</footer>
+    <script src="/js/api.js"></script>
+    <script src="/js/ui.js"></script>
+    <script src="/js/contractor.js"></script>
+  </body>
+</html>
