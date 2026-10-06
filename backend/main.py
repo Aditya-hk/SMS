@@ -46,24 +46,17 @@ from backend.models.alert import Alert
 from backend.schemas.alert import AlertCreate, AlertResponse
 
 app = FastAPI()
+from fastapi.middleware.cors import CORSMiddleware
+
 app.add_middleware(
-
     CORSMiddleware,
-
     allow_origins=[
-
         "http://localhost:5500",
-
-        "https://sms-frontend-lo7noyi1r-adityaupadhyaya11-5794s-projects.vercel.app",
-
+        "https://sms-frontend-black-beta.vercel.app",
     ],
-
     allow_credentials=True,
-
     allow_methods=["*"],
-
     allow_headers=["*"],
-
 )
 
 # Frontend compatibility layer for the supplied HTML/JS application.
