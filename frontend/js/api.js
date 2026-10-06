@@ -34,9 +34,9 @@ async function api(path, options = {}) {
       body: options.body ? JSON.stringify(options.body) : undefined,
     });
   } catch (e) {
-    throw new Error("Cannot reach FastAPI. Start the backend on port 8001.");
-  }
-
+  console.error("FastAPI connection error:", e);
+  throw new Error("Cannot reach the FastAPI backend.");
+}
   let json = {};
   try { json = await response.json(); } catch (e) {}
 
