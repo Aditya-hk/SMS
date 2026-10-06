@@ -1,6 +1,6 @@
 // api.js - single frontend gateway to the FastAPI backend.
 
-const API_BASE = "http://localhost:8001";
+const API_BASE = "https://sms-0s1q.onrender.com";
 
 // ---- login state ----
 const Session = {
